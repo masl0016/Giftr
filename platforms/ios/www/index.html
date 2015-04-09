@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GIFTR</title>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="js/app.js"></script>
+    <script src="js/hammer.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- container for all pages -->
+
+
+<!--/////////////////////////////////////////////-->
+        <section data-role="page" id="gifts-for-person">
+            <button id="pplback">Back</button>
+            <h2>Gift Ideas
+                <button class="btnadd" id="openm2">
+                    <a href="#openModal2">+</a>
+                </button>
+            </h2>
+
+            <div id="openModal2" class="modalDialog">
+               <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  <h2 id="mt">New Gift for Person</h2>
+                    <select id="pplList">
+
+                    </select>
+                  <input type="text" name="name" value="Gift Idea" id="txt14"><br>
+                   <button type="button" id="btnAddgp">Save</button>
+               </div>
+            </div>
+
+            <p class="details">
+            Here are all the gifts ideas for <span>PERSON</span> for all occasions.
+            </p>
+
+            <ul data-role="listview" id="ppl2list">
+                <!--
+                list of items to be dynamically added
+                single-tap gift idea to toggle purchased state for gift
+                 double-tap gift idea to remove from list
+                -->
+            </ul>
+        </section>
+<!--//////////////////////////////////////////////////////////////-->
+
+        <section data-role="page" id="gifts-for-occasion">
+            <button id="occback">Back</button>
+            <h2>Gift Ideas
+                <button class="btnadd" id="openm">
+                    <a href="#openModal3">+</a>
+                </button>
+            </h2>
+
+            <div id="openModal3" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2 id="mt">New Gift for Occasion</h2>
+                    <select id="optlist">
+
+                    </select>
+                    <input id="txt27" type="text" name="idea" placeholder="Gift Idea"><br>
+                    <button type="button" id="btnAddgo">Save</button>
+                </div>
+            </div>
+
+            <p class="details">
+                Here are all the gift ideas for <span>OCCASION</span> for all people.
+            </p>
+            <p id="output"></p>
+            <div id="output2"></div>
+            <p id="output3"></p>
+            <ul data-role="listview" id="occ2list">
+                <!--
+list of items to be dynamically added
+single-tap gift idea to toggle purchased state for gift
+double-tap gift idea to remove from list
+-->
+            </ul>
+        </section>
+
+<!--//////////////////////////////////////////////////        -->
+        <section data-role="page" id="people-list">
+<!--            <button id="cheat">Cheat</button>-->
+            <h2>People
+                <button class="btnadd">
+                    <a href="#openModal1">+</a>
+                </button>
+            </h2>
+
+            <div id="openModal1" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2 id="mt">New Person</h2>
+                    <input type="text" name="name" placeholder="Name" id="txt1"><br>
+                    <button type="button" id="btnAdd1">Save</button>
+                </div>
+            </div>
+
+            <p class="details">
+                Here are all the people for which <em>you</em> buy gifts.
+            </p>
+            <ul data-role="listview" id="ppllist">
+                <!--list here-->
+            </ul>
+        </section>
+<!--//////////////////////////////-->
+        <section data-role="page" id="occasion-list">
+            <h2>Occasions
+                <button class="btnadd">
+                    <a href="#openModal4">+</a>
+                </button>
+            </h2>
+
+            <div id="openModal4" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2 id="mt">New Occasion</h2>
+                    <input type="text" name="name" placeholder="Occasion Name" id="txtocc"><br>
+                    <button type="button" id="addOcc">Save</button>
+                </div>
+            </div>
+
+            <p class="details">
+                Here is the list of occasions when <em>you</em> buy gifts.
+            </p>
+            <ul data-role="listview" id="occlist">
+                <!--list here-->
+            </ul>
+        </section>
+
+<!--//////////////////////////////////////////////-->
+    </div>
+</body>
+</html>
